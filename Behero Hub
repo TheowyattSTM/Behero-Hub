@@ -1,0 +1,40 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Behero HUB", "Ocean")
+    --MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+
+    MainSection:NewButton("BloxFruit GUI", "Just open mukuro hub", function()
+        loadstring(game:HttpGet(('https://rawa.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader'),true))()
+    end)
+
+    MainSection:NewButton("Funky Friday GUI", "Just open funky friday hub", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+    end)
+
+    MainSection:NewButton("Dahood GUI", "Just open da hood hub", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end)
+
+    MainSection:NewButton("Evade hub", "Just open evade hub", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/1kyQLGmB'),ture))()
+    end)
+
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewToggle("Super-Human", "Make you can walk fast and jump high", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+        else
+            game.Players.LocalPlayer.Character.Huamnoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
+    PlayerSection:NewButton("Chat Spoofer", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
